@@ -1,0 +1,89 @@
+.background {
+    background-image: url('../../assets/imagemrecife.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.7 black;
+}
+
+.card {
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 25px;
+    padding-left: 100px;
+    padding-right: 100px;
+    gap: 15px;
+    max-width: 80%;
+    margin: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.card h2 {
+    color: #000;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans';
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.card span {
+    color: #000;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans';
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 500;
+    margin-right: auto;
+    padding: 5px;
+}
+
+.card label {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    margin-right: auto;
+
+}
+
+.card label input {
+    width: 300px;
+    height: 40px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    background: transparent;
+}
+
+.btn {
+    border-radius: 10px;
+    background: #29699d ;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    width: 200px;
+    height: 45px;
+    padding: 5px;
+    color: #fff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans';
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .card {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}

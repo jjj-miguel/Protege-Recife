@@ -1,6 +1,20 @@
+.conjunto_botoes {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    gap: 30px;
+}
+
 .botao_azul {
-    width: 200px;
-    height: 200px;
+    width: 170px;
+    height: 170px;
     background-color: #3969c5;
     color: #ffffff;
     border: none;
@@ -25,20 +39,6 @@
     line-height: normal;
     margin: 0;
     padding-top: 10px;
-}
-
-.conjunto_botoes {
-    width: 100%;
-    max-width: 617px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    gap: 30px;
 }
 
 @media (max-width: 768px) {

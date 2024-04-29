@@ -1,0 +1,104 @@
+/* ApiClima.module.css */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  background-color: #352fdc; /* Cor de fundo */
+  border-radius: 20px;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0px 4px 4px 0px #00000040;
+  width: 1400px;
+  background: linear-gradient(180deg, #1C325F 0%, #0D44AF 53.5%, #4F81E3 100%);
+}
+
+.loader {
+  font-size: 24px;
+}
+
+.error_message {
+  color: red;
+}
+
+.weather_data {
+  
+}
+
+.cidade {
+  text-align: center;
+  margin-bottom: 10px;
+  color: white; /* Cor do texto */
+}
+
+.Clima {
+  text-align: center;
+  margin-top: 10px;
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.Clima .temperature {
+  margin-left: 300px;
+  margin-right: 300px;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.description_container {
+  text-align: center;
+  /* margin-top: 20px; */
+  color: white; /* Cor do texto */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.description_container p {
+  margin: 0;
+}
+
+.description_container img {
+  margin-left: 10px; /* Espaço entre o texto e a imagem */
+}
+
+.weather_data h2 {
+  margin: 0;
+}
+
+.weather_data p {
+  margin: 5px 0;
+}
+
+.weather_data img {
+  width: 50px;
+  height: 50px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: row;
+    justify-content: center;
+    width: 330px;
+  }
+
+  .weather_data {
+    margin-top: 0;
+    margin-left: 20px;
+  }
+
+  .Clima .temperature {
+    margin-left: 28px;
+    margin-right: 28px;
+    font-size: 50px;
+    font-weight: bold;
+  }
+
+  /* Adjust other styles for larger screens if needed */
+}

@@ -4,7 +4,7 @@ import ErrorMEssage from '../../components/ErrorMEssage';
 import Modal from '../../components/Modal';
 import useAuthentication from '../../hook/useAuthentication';
 
-import logo from '../../assets/logo.svg';
+import logo from '../../assets/logoL.svg';
 
 const Cadastro = () => {
     const [displayName, setDisplayName] = useState("");
@@ -40,8 +40,8 @@ const Cadastro = () => {
   return (
     <div className={style.background}>
         <div className={style.card}>
-            <img className={style.logo} src={logo} />
-            <h2>Crie sua Conta</h2>
+            <img className={style.logo} src={logo} width='200px'/>
+            {/* <h2>Crie sua conta agora!</h2> */}
             <form  className={style.form} onSubmit={handleSubmit}>
             <label>
                 <span>Nome:</span>
@@ -55,7 +55,7 @@ const Cadastro = () => {
                 />
             </label>    
             <label>
-                <span>Email</span>
+                <span>Email:</span>
                 <input 
                     type='email'
                     name='email'
@@ -66,7 +66,7 @@ const Cadastro = () => {
                 />
             </label>
             <label>
-                <span>Senha</span>
+                <span>Senha:</span>
                 <input 
                     type='password'
                     name='password'
@@ -77,7 +77,7 @@ const Cadastro = () => {
                 />
             </label>
             <label>
-                <span>Confirme sua Senha</span>
+                <span>Confirme sua Senha:</span>
                 <input 
                     type='password'
                     name='confrimPassword'

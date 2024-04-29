@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import useAuthentication from '../../hook/useAuthentication';
-import logo from '../../assets/logo.svg';
+import logo from '../../assets/logoL.svg';
 import { Link } from 'react-router-dom';
 
 import style from './Login.module.css';
@@ -25,8 +25,8 @@ const Login = () => {
   return (
     <div className={style.background}>
         <div className={style.card}>
-            <img className={style.logo} src={logo}/>
-            <h2>Login</h2>
+            <img className={style.logo} src={logo} width='200px'/>
+            {/* <h2>Acesse sua conta!</h2> */}
             <form className={style.form} onSubmit={handleSubmit}>
             <label>
                 <span>Email</span>
@@ -53,7 +53,7 @@ const Login = () => {
             <button className={style.btn}>Entrar</button>
             {error && <p className='error'>{error.message}</p>}
             </form>
-            <Link className='link' to='/cadastro'>Criar Conta</Link>
+            <Link className={style.link} to='/cadastro'>Criar Conta</Link>
         </div>
     </div>
   )

@@ -1,6 +1,18 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    gap: 20px;
+    font-optical-sizing: auto;
+    font-family: "Open Sans", sans-serif;
+}
+
 .botao_azul {
-    width: 200px;
-    height: 200px;
+    width: 160px;
+    height: 160px;
     background-color: #3969c5;
     color: #ffffff;
     border: none;
@@ -11,6 +23,7 @@
     justify-content: center;
     align-items: center;
     transition: background-color 0.3s ease;
+    padding: 10px;
 }
 
 .botao_azul:hover {
@@ -19,7 +32,7 @@
 }
 
 .botao_azul p {
-    font-size: 20px;
+    font-size: 15px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -29,17 +42,17 @@
 
 .conjunto_botoes {
     width: 100%;
-    max-width: 617px;
+    max-width: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    /* transform: translate(-50%, -50%); */
     gap: 30px;
+    padding-top: auto;
 }
+
+
 
 @media (max-width: 768px) {
     .botao_azul {
@@ -51,4 +64,10 @@
     .botao_azul p {
         font-size: 15px;
     }
+
+    .img {
+        width: 90px;
+        height: 90px;
+    }
 }
+

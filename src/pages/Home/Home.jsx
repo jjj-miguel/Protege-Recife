@@ -1,6 +1,7 @@
 import React from 'react';
 import style from './Home.module.css';
-import Navbar from '../../components/Navbar';
+import Navbar from '../../components/Navbar/Navbar';
+import ApiClima from '../../components/ApiClima/ApiClima';
 
 // Imagem dos botões
 import casa from '../../assets/iconeCasa.svg';
@@ -11,6 +12,7 @@ import doacao from '../../assets/iconeDoacao.svg';
 
 // Funções para direcionamento de paginas
 import { useNavigate } from 'react-router-dom';
+import Chatbot from '../../components/Chatbot/Chatbot';
 
 const Home = () => {
   const navigate = useNavigate();
@@ -35,10 +37,12 @@ const Home = () => {
 
   return (
     <div>
-      <h1>Protege Recife! Seu App de apoio nos riscos Climáticos</h1>
+    <Navbar />
+    <div className={style.container}>
+      <ApiClima />
       <div className={style.conjunto_botoes}>
         <button onClick={handleBuscarLocais} className={style.botao_azul}>
-          <img src={casa} alt='buscar local'/>
+          <img className={style.img} src={casa} alt='buscar local'/>
           <p>Buscar Local</p>
         </button>
 
@@ -57,6 +61,8 @@ const Home = () => {
           <p>Acompanhar<br></br>Alerta</p>
         </button>
       </div>
+    </div>
+    <Chatbot />
     </div>
   )
 }

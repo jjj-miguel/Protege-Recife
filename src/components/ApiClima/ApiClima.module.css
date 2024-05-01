@@ -1,3 +1,7 @@
+/* Reset CSS */
+
+/* Responsiveness */
+
 /* ApiClima.module.css */
 
 .container {
@@ -22,9 +26,7 @@
   color: red;
 }
 
-.weather_data {
-  
-}
+
 
 .cidade {
   text-align: center;
@@ -40,6 +42,8 @@
   align-items: center;
   flex-direction: row;
   justify-content: center;
+  font-weight: bold;
+
 }
 
 .Clima .temperature {
@@ -48,6 +52,7 @@
   font-size: 50px;
   font-weight: bold;
 }
+
 
 .description_container {
   text-align: center;
@@ -58,10 +63,12 @@
   justify-content: center;
   align-items: center;
   flex-direction: row;
+
 }
 
 .description_container p {
   margin: 0;
+  font-weight: bold;
 }
 
 .description_container img {
@@ -85,12 +92,12 @@
   .container {
     flex-direction: row;
     justify-content: center;
-    width: 330px;
+    width: 400px;
   }
 
   .weather_data {
     margin-top: 0;
-    margin-left: 20px;
+    font-size: small;
   }
 
   .Clima .temperature {
@@ -99,6 +106,17 @@
     font-size: 50px;
     font-weight: bold;
   }
+  .Clima{
+    gap: 50px;
+  }
+  .description_container p {
+    margin: 0;
+    font-size: small;
+  }
+
+  .weather-icon img {
+      width: 50px;
+  }
+  }
 
   /* Adjust other styles for larger screens if needed */
-}

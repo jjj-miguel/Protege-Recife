@@ -3,7 +3,7 @@ import style from './../ApiClima/ApiClima.module.css'; // Certifique-se de ter o
 import axios from 'axios'; // Você precisará instalar axios via npm ou yarn
 
 function ApiClima() {
-  const [city, setCity] = useState("Recife");
+  const [city, setCity] = useState("Cairo");
   const [weatherData, setWeatherData] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);

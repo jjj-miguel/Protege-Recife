@@ -1,0 +1,61 @@
+
+.Imagem{
+    display: flex;
+    align-content: center;
+    margin: 50px auto 10px auto;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+}
+
+.dcAlerta{
+margin: 0px;
+margin-bottom: 10px;
+padding: 0px;
+font-weight: bold;
+font-size: 18px;
+
+}
+.text_regiao{
+    font-weight: bold;
+    font-size: 30px;
+    margin: 0px;
+    padding: 20px 0px;
+
+}
+.storm-text {
+    color: rgb(255, 0, 0);
+    font-size: 60px;
+    font-weight: bold;
+    margin: 0px;
+    padding: 20px 0px;
+
+  }
+
+.rain-text {
+    color: rgb(255, 136, 0);
+    font-size: 60px;
+    font-weight: bold;
+    margin: 0px;
+    padding: 20px 0px;
+
+
+  }
+  
+  .drizzle-text {
+    color: gray;
+    font-size: 60px;
+    font-weight: bold;
+    margin: 0px;
+    padding: 20px 0px;
+
+  }
+  
+  .normal-text {
+    color: rgb(0, 255, 34);
+    font-size: 60px;
+    font-weight: bold;
+    margin: 0px;
+    padding: 20px 0px;
+
+  }

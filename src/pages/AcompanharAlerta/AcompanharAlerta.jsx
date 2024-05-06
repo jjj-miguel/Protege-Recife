@@ -1,10 +1,28 @@
 import React from 'react';
-import styles from './../AcompanharAlerta/AcompanharAlerta.module.css';
+import Styles from './AcompanharAlerta.module.css';
+import Navbar from '../../components/Navbar/Navbar';
+import ApiClima from '../../components/ApiClima/ApiClima';
+import ApiAlerta from '../../components/ApiAlerta/ApiAlerta';
+// Imagem dos botões
 
-const AcompanharAlerta = () => {
+// Funções para direcionamento de paginas
+import Chatbot from '../../components/Chatbot/Chatbot';
+
+function Alerta() {
+
+
+
+
   return (
-    <div>AcompanharAlerta</div>
+    <div>
+    <Navbar />      
+    <ApiClima />
+    <Chatbot />
+    <ApiAlerta/>
+    <p>Encontre um lugar para se abrigar</p>
+    <button className={Styles.btn}>Buscar Local</button>
+    </div>
   )
 }
 
-export default AcompanharAlerta
+export default Alerta;

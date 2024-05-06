@@ -1,4 +1,4 @@
-.card {
+.CardContatos {
     font-family: "Open Sans", sans-serif;
     background-color: #3969C5;
     width: auto;
@@ -9,7 +9,13 @@
     box-shadow: 2px solid black;
 }
 
-h3, p {
+.CardContatos p {
+    color: white;
+    padding: 10px;
+    margin: auto;
+    font-weight: bold;
+}
+.CardContatos h3 {
     color: white;
     padding: 10px;
     margin: auto;

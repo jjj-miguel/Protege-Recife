@@ -3,7 +3,7 @@ import styles from './../CardContatos/CardContatos.module.css';
 
 const CardContatos = ({ nomeOrgao, numeroContato }) => {
   return (
-    <div className={styles.card}>
+    <div className={styles.CardContatos}>
         <h3>{nomeOrgao}</h3>
         <p>{numeroContato}</p>
     </div>

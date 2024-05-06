@@ -42,6 +42,13 @@
   justify-content: center;
 }
 
+.details_humidity, .details_wind {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .Clima .temperature {
   margin-left: 300px;
   margin-right: 300px;
@@ -86,11 +93,15 @@
     flex-direction: row;
     justify-content: center;
     width: 330px;
+    height: 178px;
+    margin-bottom: 10px;
+
   }
 
   .weather_data {
     margin-top: 0;
     margin-left: 20px;
+    margin-right: 20px;
   }
 
   .Clima .temperature {
@@ -98,6 +109,8 @@
     margin-right: 28px;
     font-size: 50px;
     font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 10px;
   }
 
   /* Adjust other styles for larger screens if needed */

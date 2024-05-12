@@ -102,29 +102,28 @@
     width: 330px;
   }
 
-  .weather_data {
-    margin-top: 0;
-    margin-left: 20px;
-  }
-
   .Clima .temperature {
     margin-left: 28px;
     margin-right: 28px;
-    font-size: 50px;
+    font-size: 30px;
     font-weight: bold;
     margin-bottom: 10px;
     margin-top: 10px;
   }
   .Clima{
-    gap: 50px;
+    gap: 30px;
   }
   .description_container p {
     margin: 0;
     font-size: small;
+    margin-left: 20px;
   }
 
   .weather-icon img {
       width: 50px;
+  }
+  .details_humidity,.details_wind{
+    font-size: small;
   }
   }
 
